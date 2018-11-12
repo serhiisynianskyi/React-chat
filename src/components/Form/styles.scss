@@ -1,0 +1,28 @@
+$black: #000000;
+$white: #FFFFFF;
+$submit-background: #347BED;
+
+.chat-form {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  &-input {
+    width: 40%;
+    padding: 10px;
+    font: 500 15px/1.2 Arial;
+    color: $black;
+  }
+  &-submit {
+    width: 20%;
+    margin: 0;
+    border: none;
+    font: 700 15px/1.2 Arial;
+    color: $white;
+    background-color: $submit-background;
+    cursor: pointer;
+    transition: .3s opacity ease-in-out;
+    &:disabled {
+      opacity: .3;
+    }
+  }
+}
